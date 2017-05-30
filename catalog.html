@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="logo">
+          Логотип Мишка
+        </div>
+        <button type="button" class="nav-btn-open">Открыть главное меню</button>
+        <button type="button" class="nav-btn-close">Закрыть главное меню</button>
+        <ul class="nav hidden">
+          <li class="nav__item"><a class="nav__link" href="#">Каталог товаров</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Поиск по сайту</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Корзина:пока пуста</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="page-main-catalog">
+      <header class="catalog-top">
+        <h1 class="catalog-top__title">Каталог товаров</h1>
+      </header>
+      <section class="catalog-middle">
+        <h2 class="catalog-middle__title">Подробный список товаров</h2>
+        <div class="container">
+          <article class="product">
+            <h2 class="product__title">Зайчик-попрыгайчик</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
+            <a class="product__link-text" href="#">Зайчик-попрыгайчик</a>
+            <p class="product__descr">Рост 30 см, вес 200 г</p>
+            <span class="product__price">1 200 руб.</span>
+            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
+            <div class="modal-basket hidden"><!--Добавить в корзину/модальное окно-->
+              <h2 class="modal-basket__title">Добавить в корзину</h2>
+              <p class="modal-basket__text">Выберите размер:</p>
+              <button class="btn btn-size" type="button">S</button>
+              <button class="btn btn-size" type="button">M</button>
+              <button class="btn btn-size" type="button">L</button>
+              <button class="btn btn-add" type="submit">Добавить</button>
+            </div>
+          </article>
+          <article class="product">
+            <h2 class="product__title">Корзинка для белья</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка корзинка для белья">Корзинка для белья</a>
+            <a class="product__link-text" href="#">Корзинка для белья</a>
+            <p class="product__descr">Диаметр 15 см, высота 10 см</p>
+            <span class="product__price">690 руб.</span>
+            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
+          </article>
+          <article class="product">
+            <h2 class="product__title">Большая корзинка для игрушек</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка большая корзинка для игрушек">Большая корзинка для игрушек</a>
+            <a class="product__link-text" href="#">Большая корзинка для игрушек</a>
+            <p class="product__descr">Диаметр 30 см, высота 30 см</p>
+            <span class="product__price">1 500 руб.</span>
+            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
+          </article>
+        </div>
+      </section>
+      <section class="catalog-bottom">
+        <h2 class="catalog-bottom__title">Процесс производства</h2>
+        <div class="container">
+          <div class="video">
+            <video class="video-type" src="#" width="#" height="#"><img class="video-picture" src="#" width="#" height="#" alt="Видео процесса производства">
+            </video>
+          </div>
+          <p class="video-descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+          </p>
+          <a class="btn btn-order" href="open-modal">Сделать заказ</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <ul class="social">
+          <li class="social__item"><a class="social-btn social-btn-inst">Мы в Инстаграм</a></li>
+          <li class="social__item"><a class="social-btn social-btn-fb">Мы в Фейсбук</a></li>
+          <li class="social__item"><a class="social-btn social-btn-tw">Мы в Твиттер</a></li>
+        </ul>
+        <span class="page-footer__text">Разработано</span>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </footer>
+  </body>
+</html>
