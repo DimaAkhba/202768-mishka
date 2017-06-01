@@ -10,8 +10,8 @@
         <div class="logo">
           Логотип Мишка
         </div>
-        <button type="button" class="nav-btn-open">Открыть главное меню</button>
-        <button type="button" class="nav-btn-close">Закрыть главное меню</button>
+        <button type="button" class="nav-btn nav-btn--open">Открыть главное меню</button>
+        <button type="button" class="nav-btn nav-btn--open">Закрыть главное меню</button>
         <ul class="nav hidden">
           <li class="nav__item"><a class="nav__link" href="#">Каталог товаров</a></li>
           <li class="nav__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
@@ -25,19 +25,19 @@
         <h1 class="main-top__title">Вязание на заказ</h1>
       </div>
       <div class="container">
-        <p class="main-form-descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы звяжемся с вами,чтобы уточнить детали.</p>
+        <p class="main-top main-top__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы звяжемся с вами,чтобы уточнить детали.</p>
         <section class="main-bottom">
           <h2 class="main-bottom__title">Форма заказа товара</h2>
           <form class="main-form" method="post" action="https://htmlacademy.ru/intensive/adaptive">
-            <fieldset class="main-form main-form__radio">
-              <figcaption class="fieldset__title">Тип</figcaption>
+            <fieldset class="main-form main-form--radio">
+              <legend class="main-form__title">Тип</legend>
               <input class="radio-field" type="radio" name="radio-field" id="radio-field-first" checked>
               <label for="radio-field-first">Аксессуар для интерьера</label>
               <input class="radio-field" type="radio" name="radio-field" id="radio-field-second">
               <label for="radio-field-second">Детская игрушка</label>
             </fieldset>
-            <fieldset class="main-form main-form__checkbox">
-              <figcaption class="fieldset__title"></figcaption>
+            <fieldset class="main-form main-form--checkbox">
+              <legend class="main-form__title">Цвет</legend>
               <input class="checkbox-field" type="checkbox" name="checkbox-field" id="checkbox-field-white" value="white" checked>
               <label for="checkbox-field-white">Белый</label>
               <input class="checkbox-field" type="checkbox" name="checkbox-field" id="checkbox-field-gray" value="gray" checked>
@@ -51,8 +51,8 @@
               <input class="checkbox-field" type="checkbox" name="checkbox-field" id="checkbox-field-orange" value="orange">
               <label for="checkbox-field-orange">Оранжевый</label>
             </fieldset>
-            <fieldset class="main-form main-form__text">
-              <figcaption class="fieldset__title">ФИО</figcaption>
+            <fieldset class="main-form main-form--text">
+              <legend class="main-form__title">ФИО</legend>
               <label for="name-field">Имя:</label>
               <input class="name-field" type="text" name="name-field" id="name-field" placeholder="Введите ваше имя*" required>
               <label for="surname-field">Фамилия:</label>
@@ -64,13 +64,13 @@
               <label for="email-field">E-mail</label>
               <input class="email-field" type="email" name="email-field" id="email-field" placeholder="Ваш Email*" required>
             </fieldset>
-            <fieldset class="main-form main-form__textarea">
-              <figcaption class="fieldset__title">Доп</figcaption>
+            <fieldset class="main-form main-form--textarea">
+              <legend class="main-form__title">Доп</legend>
               <textarea class="textarea-field" name="textarea-field" id="textarea-field" placeholder="Опишите все ваши пожелания к заказу">
               </textarea>
             </fieldset>
             <span class="form-text">*Поля обязательны для заполнения</span>
-            <button class="btn btn-send" type="submit">Отправить заказ</button>
+            <button class="btn btn--send" type="submit">Отправить заказ</button>
           </form>
         </section>
       </div>
@@ -78,9 +78,9 @@
     <footer class="page-footer">
       <div class="container">
         <ul class="social">
-          <li class="social__item"><a class="social-btn social-btn-inst">Мы в Инстаграм</a></li>
-          <li class="social__item"><a class="social-btn social-btn-fb">Мы в Фейсбук</a></li>
-          <li class="social__item"><a class="social-btn social-btn-tw">Мы в Твиттер</a></li>
+          <li class="social__item"><a class="social-btn social-btn--inst">Мы в Инстаграм</a></li>
+          <li class="social__item"><a class="social-btn social-btn--fb">Мы в Фейсбук</a></li>
+          <li class="social__item"><a class="social-btn social-btn--tw">Мы в Твиттер</a></li>
         </ul>
         <span class="page-footer__text">Разработано</span>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive"></a>
