@@ -1,0 +1,22 @@
+.catalog-bottom {
+  margin-top: 20px;
+  padding-top: 10px;
+  outline: 1px solid @gray-color;
+
+  .catalog-bottom__title {
+    position: relative;
+    margin-left: 85px;
+
+    .font(17px, 600, 24px);
+  }
+
+  .catalog-bottom__title::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -50px;
+    background: @icon-video;
+
+    .size-mixin(35px, 30px);
+  }
+}

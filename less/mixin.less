@@ -1,0 +1,31 @@
+.size-mixin(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.color-mixin(@color, @background-color) {
+  color: @color;
+  background-color: @background-color;
+}
+
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.font(@font-size, @font-weight, @line-height) {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: @font-size;
+  font-weight: @font-weight;
+  line-height: @line-height;
+}
+
+.border-box() {
+  box-sizing: border-box;
+}

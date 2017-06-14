@@ -1,0 +1,25 @@
+.modal-basket {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 20%;
+  left: 0.6%;
+  background-color: @base-color;
+  border: 1px solid @gray-color;
+
+  .color-mixin(@color, @base-color)
+  .size-mixin(320px, 337px);
+
+  .modal-basket__title {
+    margin-left: 60px;
+    margin-top: 38px;
+    text-transform: uppercase;
+
+    .size-mixin(150px);
+    .font(25px, 600, 30px);
+  }
+
+  .modal-basket__text {
+    margin-left: 70px;
+  }
+}

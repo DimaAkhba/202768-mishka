@@ -3,86 +3,86 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
         <div class="logo">
-          Логотип Мишка
+          <span class="title-hidden">Логотип Мишка</span>
         </div>
-        <button type="button" class="nav-btn nav-btn--open">Открыть главное меню</button>
-        <button type="button" class="nav-btn nav-btn--close">Закрыть главное меню</button>
-        <ul class="nav hidden">
-          <li class="nav__item"><a class="nav__link" href="#">Каталог товаров</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Поиск по сайту</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Корзина:пока пуста</a></li>
-        </ul>
+        <button type="button" class="nav-btn nav-btn--open"><span class="title-hidden">Открыть главное меню</span></button>
+        <button type="button" class="nav-btn nav-btn--close"><span class="title-hidden">Закрыть главное меню</span></button>
       </div>
+      <ul class="nav hidden">
+        <li class="nav__item"><a class="nav__link" href="#">Каталог товаров</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Вязание на заказ</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Поиск по сайту</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Корзина: пока пуста</a></li>
+      </ul>
     </header>
     <main class="page-main-catalog">
       <header class="catalog-top">
         <h1 class="catalog-top__title">Каталог товаров</h1>
       </header>
-      <section class="catalog-middle">
-        <h2 class="catalog-middle__title">Подробный список товаров</h2>
-        <div class="container">
+      <div class="container">
+        <section class="catalog-middle">
+          <h2 class="catalog-middle__title title-hidden">Подробный список товаров</h2>
           <article class="product">
-            <h2 class="product__title">Зайчик-попрыгайчик</h2>
-            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
+            <h2 class="product__title title-hidden">Зайчик-попрыгайчик</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Картинка зайчик-попрыгайчик"><span class="title-hidden">Зайчик-попрыгайчик</span></a>
             <a class="product__link-text" href="#">Зайчик-попрыгайчик</a>
             <p class="product__descr">Рост 30 см, вес 200 г</p>
             <span class="product__price">1 200 руб.</span>
-            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
-            <div class="modal-basket hidden"><!--Добавить в корзину/модальное окно-->
+            <a class="btn-basket" href="#open-modal-basket"><span class="title-hidden">Открыть модальное окно "Корзина"</span></a>
+            <div class="modal-basket" id="#open-modal-basket "><!--Добавить в корзину/модальное окно-->
+              <div class="container">
               <h2 class="modal-basket__title">Добавить в корзину</h2>
               <p class="modal-basket__text">Выберите размер:</p>
               <button class="btn btn--size" type="button">S</button>
               <button class="btn btn--size" type="button">M</button>
               <button class="btn btn--size" type="button">L</button>
               <button class="btn btn--add" type="submit">Добавить</button>
+              </div>
             </div>
           </article>
           <article class="product">
-            <h2 class="product__title">Корзинка для белья</h2>
-            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка корзинка для белья">Корзинка для белья</a>
+            <h2 class="product__title title-hidden">Корзинка для белья</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Картинка корзинка для белья"><span class="title-hidden">Корзинка для белья</span></a>
             <a class="product__link-text" href="#">Корзинка для белья</a>
             <p class="product__descr">Диаметр 15 см, высота 10 см</p>
             <span class="product__price">690 руб.</span>
-            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
+            <a class="btn-basket" href="#open-modal-basket"><span class="title-hidden">Открыть модальное окно "Корзина"</span></a>
           </article>
           <article class="product">
-            <h2 class="product__title">Большая корзинка для игрушек</h2>
-            <a class="product__link-picture" href="#"><img class="product__picture" src="#" width="#" height="#" alt="Картинка большая корзинка для игрушек">Большая корзинка для игрушек</a>
-            <a class="product__link-text" href="#">Большая корзинка для игрушек</a>
+            <h2 class="product__title title-hidden">Большая корзинка для игрушек</h2>
+            <a class="product__link-picture" href="#"><img class="product__picture" src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Картинка большая корзинка для игрушек"><span class="title-hidden">Большая корзинка для игрушек</span></a>
+            <a class="product__link-text" href="#">Большая корзинка<br> для игрушек</a>
             <p class="product__descr">Диаметр 30 см, высота 30 см</p>
             <span class="product__price">1 500 руб.</span>
-            <a class="btn-basket" href="open-modal-basket">Открыть модальное окно "Корзина"</a>
+            <a class="btn-basket" href="#open-modal-basket"><span class="title-hidden">Открыть модальное окно "Корзина"</span></a>
           </article>
-        </div>
-      </section>
-      <section class="catalog-bottom">
-        <h2 class="catalog-bottom__title">Процесс производства</h2>
-        <div class="container">
+        </section>
+        <section class="catalog-bottom">
+          <h2 class="catalog-bottom__title">Процесс<br> производства</h2>
           <div class="video">
-            <video class="video__type" src="#" width="#" height="#"><img class="video__picture" src="#" width="#" height="#" alt="Видео процесса производства">
-            </video>
+            <img class="video__picture" src="#" width="260" height="150" alt="Видео процесса производства">
           </div>
           <p class="video video__descr">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
           </p>
           <a class="btn btn--order" href="open-modal">Сделать заказ</a>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
         <ul class="social">
-          <li class="social__item"><a class="social-btn social-btn--inst">Мы в Инстаграм</a></li>
-          <li class="social__item"><a class="social-btn social-btn--fb">Мы в Фейсбук</a></li>
-          <li class="social__item"><a class="social-btn social-btn--tw">Мы в Твиттер</a></li>
+          <li class="social__item"><a class="social-btn social-btn--inst"><span class="title-hidden">Мы в Инстаграм</span></a></li>
+          <li class="social__item"><a class="social-btn social-btn--fb"><span class="title-hidden">Мы в Фейсбук</span></a></li>
+          <li class="social__item"><a class="social-btn social-btn--tw"><span class="title-hidden">Мы в Твиттер</span></a></li>
         </ul>
         <span class="page-footer__text">Разработано</span>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive"><span class="title-hidden">Ссылка на сайт htmlacademy.ru</span></a>
       </div>
     </footer>
   </body>

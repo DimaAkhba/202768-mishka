@@ -1,0 +1,16 @@
+.video__picture {
+  position: relative;
+  background: @picture-video;
+
+  .size-mixin(260px, 150px);
+
+  .video__picture::after {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 80px;
+    background: @icon-play;
+
+    .size-mixin(100px, 80px);
+  }
+}
