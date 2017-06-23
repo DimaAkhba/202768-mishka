@@ -2,7 +2,7 @@
   width: 320px;
   background-color: @gray-lighter-color;
 
-  .color-mixin(@color, @gray-lighter-color);
+  .color-mixin(@gray-lighter-color, @gray-lighter-color);
   .size-mixin(320px);
 
   .page-footer__text {
@@ -14,7 +14,8 @@
   .copyright {
     display: block;
     background: @icon-htmlacademy;
+    height: 37px;
 
-    .size-mixin(30px, 37px);
+    .size-mixin(30px);
   }
 }

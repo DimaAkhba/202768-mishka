@@ -4,7 +4,7 @@
   border: 2px solid @gray-color;
   cursor: pointer;
 
-  .color-mixin(@gray-darker-color, @white-color)
+  .color-mixin(@gray-darker-color, @white-color);
   .font(15px, 400, 24px);
 
   &--size {
@@ -29,9 +29,10 @@
     border: 2px solid @gray-darker-color;
     color: @gray-darker-color;
     text-transform: uppercase;
+    height: 50px;
 
-    .color-mixin(@gray-darker-color);
-    .size-mixin(190px, 50px);
+    .color-mixin(@gray-darker-color,#fff);
+    .size-mixin(190px);
     .border-box();
     .font(17px, 600, 16px);
   }

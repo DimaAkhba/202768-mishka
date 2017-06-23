@@ -1,8 +1,9 @@
 .video__picture {
   position: relative;
   background: @picture-video;
+  height: 150px;
 
-  .size-mixin(260px, 150px);
+  .size-mixin(260px);
 
   .video__picture::after {
     position: absolute;
@@ -10,7 +11,8 @@
     top: 40px;
     left: 80px;
     background: @icon-play;
+    height: 80px;
 
-    .size-mixin(100px, 80px);
+    .size-mixin(100px);
   }
 }
